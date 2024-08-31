@@ -79,7 +79,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Movie_Group_Support_bot') # Support 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
@@ -96,17 +96,17 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
-VERIFY = bool(environ.get('VERIFY', False))
-VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', '')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
+VERIFY = bool(environ.get('VERIFY', True))
+VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', True))
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'publicearn.com')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '63abbd0502e32cb99ea2d82edf518d903c827e3f')
 # if verify second shortner is True then fill below url and api
-VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', '')
-VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
+VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'publicearn.com')
+VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '63abbd0502e32cb99ea2d82edf518d903c827e3f')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/howtodownload088')
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '63abbd0502e32cb99ea2d82edf518d903c827e3f')
 
